@@ -13,15 +13,21 @@ The network follows 1 -> 16 -> 1 architechture:
 The model learns by minimizing Mean Squared Error (MSE) via Gradient Descent.
 
 **Forward Pass:**
+
 1. $o_1 = X \cdot W_1 + b_1$
 2. $f_{o1} = \text{ReLU}(o_1)$
 3. $o_2 = f_{o1} \cdot W_2 + b_2$
 
+
 **Backward Pass:**
+
 To update the weights, the gradients are calculated by working backward from the error:
+
 Output Gradient: $\frac{\partial L}{\partial \hat{y}} = \frac{2}{n}(\hat{y} - y)$
 Hidden Layer Gradient: The derivative of ReLU: $f'(x) = 1$ if $x > 0$ else $0$.
 
 ## 📊 Predictions
 ![Predictions](plots/predictions.png)
+
+
 The model learns to ignore the noise injected and learns the underlying trend of the function.
