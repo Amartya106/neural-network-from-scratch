@@ -24,6 +24,7 @@ The model learns by minimizing Mean Squared Error (MSE) via Gradient Descent.
 To update the weights, the gradients are calculated by working backward from the error:
 
 Output Gradient: $\frac{\partial L}{\partial \hat{y}} = \frac{2}{n}(\hat{y} - y)$
+
 Hidden Layer Gradient: The derivative of ReLU: $f'(x) = 1$ if $x > 0$ else $0$.
 
 ## 📊 Predictions
