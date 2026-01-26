@@ -66,7 +66,6 @@ for epoch in range(epochs):
     b2 -= lr* db2
 
     print(f"Epoch {epoch+1}, Loss: {loss:.4f}")
-    epoch +=1
 
 _, _, y_pred = forward(x)
 plt.scatter(x, y, label="True Data")
