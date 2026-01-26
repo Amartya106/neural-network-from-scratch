@@ -4,7 +4,7 @@ This project is an implementation of a neural network designed to approximate a 
 It demonstrates the fundamental mechanics of deep learning: forward propagation, ReLU activation and manual backpropagation.
 
 ## 🏗 Architecture
-The network follows 1 -> 16 -> 1 architechture:
+The network follows 1 -> 16 -> 1 architecture:
 - Input Layer: A single feature (x)
 - Hidden Layer: 16 neurons with ReLU activation
 - Output Layer: A single output (y)
